@@ -1,0 +1,16 @@
+package simDuck;
+
+import simDuck.FlyBehavior.FlyNoWay;
+import simDuck.QuackBehavior.Quack;
+
+public class ModelDuck extends Duck{
+    public ModelDuck(){
+        flyBehavior = new FlyNoWay();
+        quackBehavior = new Quack();
+    }
+
+    @Override
+    public void display() {
+        System.out.println("I'm a mode duck");
+    }
+}
